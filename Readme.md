@@ -1,8 +1,10 @@
-cài google map trước
-sửa lại node module của nó
+install google map  first. after that edit node module like this comment: 
+```
 https://github.com/react-community/react-native-maps/issues/2152
-map cài như bt
-thêm ở android/build.gradle
+```
+install as normal
+note:
+add some lines in android/build.gradle
 
 ```
         maven {
@@ -11,8 +13,8 @@ thêm ở android/build.gradle
         maven { url "https://jitpack.io" }
             }
 ```
-sau đó cài camera
-thêm dòng này ở android/app/build.gradle
+after that, install camera
+add some lines in android/app/build.gradle
 
 ```
     compile (project(':react-native-camera')) {
@@ -23,4 +25,6 @@ thêm dòng này ở android/app/build.gradle
     }
 ```
 
-xem commit để rõ hơn
+look at my commit to understand more.
+
+https://github.com/hungdev/IntegrateMapAndCamera/commits/master
